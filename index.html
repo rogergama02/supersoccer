@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Soccer</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #283593; /* Cor do fundo azul */
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .center-logo {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        .center-logo img {
+            max-height: 150px; /* Define a altura máxima da imagem */
+            max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column; /* Alinha os botões em coluna */
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .buttons a {
+            background-color: #B0BEC5; /* Cor de fundo dos botões */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 15px;
+            font-size: 14px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .buttons a:hover {
+            background-color: #9EAEB4; /* Cor do fundo dos botões ao passar o mouse */
+        }
+        
+        /* Estilos para telas maiores (desktop) */
+        @media (min-width: 768px) {
+            .navbar {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .buttons {
+                flex-direction: column;
+                margin-top: 0;
+            }
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+            gap: 20px;
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: #f3f3f3;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.2s;
+            padding: 5px; /* Espaçamento de 5 pixels ao redor da imagem */
+        }
+        .grid-item:hover {
+            transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+        }
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            max-height: 90%; /* Reduz a altura máxima da imagem */
+            max-width: 90%; /* Reduz a largura máxima da imagem */
+            display: block;
+            margin: auto; /* Centraliza a imagem dentro do grid-item */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="buttons"></div> <!-- Placeholder para manter o alinhamento -->
+        <div class="center-logo">
+            <img src="C:\Users\roger\OneDrive\Área de Trabalho\robinho\pong.png" alt="Logo">
+        </div>
+        <div class="buttons">
+            <a href="#video-exclusivo">VÍDEO EXCLUSIVO</a>
+            <a href="#pesquise">PESQUISE</a>
+        </div>
+    </div>
+
+    <!-- Seção de boxes com imagens -->
+    <div class="grid-container">
+        <div class="grid-item">
+            <a href="https://www.instagram.com/p/C9sJ8FDAnBe/?igsh=c280aHVvcmN0c2x0">
+                <img src="caça-rato.jpeg" alt="caça-rato">
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.instagram.com/p/C-nWOsRAMWI/?igsh=MWJyODN5a2dsaXl3cQ==">
+                <img src="camisas-dificeis.jpeg" alt="camisas-dificeis">
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.instagram.com/p/C-dEkTsAwfD/?igsh=MTBoazZvNW9lZTFrOA==">
+                <img src="endrick-sal.jpeg" alt="endrick-sal">
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.instagram.com/p/C9z3pJgvtp6/?igsh=MXhiZnVkb2x5azN6MA==">
+                <img src="halland-ado.jpeg" alt="halland-ado">
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.instagram.com/p/C95BLzUgGwN/?igsh=enJ5amt2bTlmbHIw">
+                <img src="homens-impedimento.jpeg" alt="homens-impedimento">
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.instagram.com/p/C-f35t4gGq8/?igsh=MTgwaGwwaTJ0c3Vjdw==">
+                <img src="luan-marta.jpeg" alt="luan-marta">
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.instagram.com/p/C-DXsytAWZE/?igsh=bXpsajc5YW12OTAy">
+                <img src="morto-vivo.jpeg" alt="morto-vivo">
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.instagram.com/p/C-QMcCmgjf9/?igsh=cmhudjlpb2IwcWFx">
+                <img src="rivais.jpeg" alt="rivais">
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.instagram.com/p/C-kzBVFgAeQ/?igsh=MXE0czBsa3gwZWlmMg==">
+                <img src="messi-cris-tec.jpeg" alt="messi-cris-tec">
+            </a>
+        </div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div style="padding: 20px;">
+        <!-- Aqui vai o conteúdo principal do site -->
+    </div>
+</body>
+</html>
